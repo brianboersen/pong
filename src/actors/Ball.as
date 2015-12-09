@@ -22,7 +22,7 @@ package actors
 		}
 		public function get xMove():Number
 		{
-			return _movement.x;			
+			return _movement.x;			 		
 		}
 		public function set xMove(move:Number):void
 		{
