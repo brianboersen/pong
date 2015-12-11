@@ -38,7 +38,7 @@ package screens
 			scoreFormat = new TextFormat();
 			scoreFormat.font = "jedi";
 			scoreFormat.size = 40;
-			scoreFormat.color = 0x440066;
+			scoreFormat.color = 0x0000ff;
 			
 		}
 		
