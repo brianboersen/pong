@@ -26,9 +26,11 @@ package sounds
 			loadSound("../lib/pong3.mp3");
 			loadSound("../lib/My Name Is Jeff Sound Effect [Free Download].mp3");	
 			loadSound("../lib/[Dubstep] daPlaque - dead_line.mp3");	
+			loadSound("../lib/JohnCena.mp3");	
 						
 			_main.addEventListener(GameScreen.BALL_BOUNCE, onBounce, true);
 			_main.addEventListener(GameScreen.GAME_OVER, onGameOver, true);
+			_main.addEventListener(GameScreen.WIN, onWin, true);
 			_main.addEventListener(IntroScreen.START_GAME, onIntro, true);
 			
 		}
@@ -48,11 +50,17 @@ package sounds
 			
 			
 		}
+	
 		private function onGameOver(e:Event):void 
 		{
 			stopAllSound();
 			playSound(3);
-		}		
+		}
+		private function onWin(e:Event):void 
+		{
+			stopAllSound();
+			playSound(5);
+		}	
 		private function onBounce(e:Event):void 
 		{
 			playSound(Math.floor(Math.random() * 3));
